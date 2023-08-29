@@ -6,18 +6,29 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body{
+/* body{
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background: linear-gradient(115deg,rgba(17, 17, 17, 0.8),rgba(17, 17, 17, 0.7)),
+    background: linear-gradient(115deg,rgba(58, 58, 158, 0.8),rgba(58, 58, 158, 0.8)),
         url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+} */
+body{
+    content: "";
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(115deg,rgba(58, 58, 158, 0.8),rgba(58, 58, 158, 0.8)),
+        url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .form-section{
@@ -51,8 +62,11 @@ body{
     background-color: rgba(27, 27, 50, 0.8);
     height: 100%;
     width: 100%;
-    padding: 30px;
+    padding: 40px;
     border-radius: 10px;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
 }
 #survey-form .inputs{
     display: flex;
@@ -65,9 +79,37 @@ body{
     color: #fff;
     font-size: 18px;
 }
-#survey-form .inputs input{
+#survey-form .inputs input, #survey-form .inputs select{
     width: 100%;
     padding: 8px;
     font-size: 16px;
     outline: none;
+}
+#survey-form .inputs select{
+    color: #777;
+}
+#survey-form .inputs .radio-input, #survey-form .inputs .checkbox-input{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 10px;
+    gap: 10px;
+    color: #ddd;
+}
+#survey-form .inputs textarea{
+    width: 100%;
+    padding: 20px;
+}
+
+#survey-form .btn button{
+    display: block;
+    padding: 8.5px;
+    background-color: #37af65;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    margin-top: 25px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
 }
