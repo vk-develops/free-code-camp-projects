@@ -94,3 +94,14 @@ blockquote p, blockquote cite{
     margin-top: 45px;
     margin-bottom: 20px;
 }
+
+@media only screen and (max-width: 550px) {
+    #tribute-info ul{
+        max-width: 80%;
+        margin: auto;
+    }
+    blockquote{
+        max-width: 80%;
+        margin: auto;
+    }
+}
