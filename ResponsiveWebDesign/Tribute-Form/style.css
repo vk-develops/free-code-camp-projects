@@ -8,7 +8,7 @@
 
 body{
     background-color: #fff;
-    padding: 4% 2%;
+    padding: 4% .5%;
 }
 
 #main{
@@ -50,4 +50,47 @@ body{
     text-align: center;
     padding-top: 15px;
     color: #333;
+}
+
+#tribute-info{
+    padding-top: 30px;
+}
+#tribute-info h3{
+    text-align: center;
+    padding-bottom: 55px;
+}
+#tribute-info ul{
+    max-width: 50%;
+    margin: auto;
+    display: block;
+}
+#tribute-info ul li{
+    margin-bottom: 30px;
+    color: #555;
+}
+#tribute-info ul strong{
+    padding-right: 15px;
+    color: #222;
+}
+
+blockquote{
+    max-width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 35px;
+}
+blockquote p, blockquote cite{
+    color: #555;
+    font-weight: 300;
+}
+#tribute-info h1{
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    margin-top: 45px;
+    margin-bottom: 20px;
 }
